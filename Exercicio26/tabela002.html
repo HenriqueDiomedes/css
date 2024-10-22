@@ -11,6 +11,7 @@
         table{
             width: 500px;       /*width - largura da tabela*/
             border-collapse: separate;      /*faz com que a tabela fique com as linhas juntas, "trocando para separate, elas se separam"*/
+            position: relative;
         }
 
         td, th{
@@ -19,8 +20,14 @@
         }
 
         thead, tfoot{       /*define a cor do cabeçalho "thead", e a cor do roodapé "tfoot*/
-            background-color: rgb(100, 98, 98);     /*cor de fundo*/
+            background-color: #383838;     /*cor de fundo*/
             color: white;       /*cor da letra*/
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
 
         tbody > tr:nth-child(odd){  /*odd - significa coluna impar(pode ser trocado por 2n-1)*/
@@ -118,5 +125,9 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo autem, mollitia eos nemo modi dolorum nostrum possimus rerum sint odit a doloremque, numquam animi odio similique aliquid maiores dolor delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere distinctio ut, repellat autem saepe optio eveniet, necessitatibus totam ex maiores. Suscipit alias at, accusantium eos voluptates nostrum doloremque eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ab voluptates voluptate alias in, illum aspernatur tempora ad! Hic, eos expedita itaque excepturi perferendis perspiciatis! Corrupti adipisci sed mollitia illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sint magni soluta nisi asperiores recusandae quae sunt quo, dolorum sequi. Voluptates corrupti laboriosam laborum molestiae ratione earum aliquid culpa. Itaque?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo autem, mollitia eos nemo modi dolorum nostrum possimus rerum sint odit a doloremque, numquam animi odio similique aliquid maiores dolor delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere distinctio ut, repellat autem saepe optio eveniet, necessitatibus totam ex maiores. Suscipit alias at, accusantium eos voluptates nostrum doloremque eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ab voluptates voluptate alias in, illum aspernatur tempora ad! Hic, eos expedita itaque excepturi perferendis perspiciatis! Corrupti adipisci sed mollitia illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sint magni soluta nisi asperiores recusandae quae sunt quo, dolorum sequi. Voluptates corrupti laboriosam laborum molestiae ratione earum aliquid culpa. Itaque?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo autem, mollitia eos nemo modi dolorum nostrum possimus rerum sint odit a doloremque, numquam animi odio similique aliquid maiores dolor delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere distinctio ut, repellat autem saepe optio eveniet, necessitatibus totam ex maiores. Suscipit alias at, accusantium eos voluptates nostrum doloremque eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ab voluptates voluptate alias in, illum aspernatur tempora ad! Hic, eos expedita itaque excepturi perferendis perspiciatis! Corrupti adipisci sed mollitia illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sint magni soluta nisi asperiores recusandae quae sunt quo, dolorum sequi. Voluptates corrupti laboriosam laborum molestiae ratione earum aliquid culpa. Itaque?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo autem, mollitia eos nemo modi dolorum nostrum possimus rerum sint odit a doloremque, numquam animi odio similique aliquid maiores dolor delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere distinctio ut, repellat autem saepe optio eveniet, necessitatibus totam ex maiores. Suscipit alias at, accusantium eos voluptates nostrum doloremque eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ab voluptates voluptate alias in, illum aspernatur tempora ad! Hic, eos expedita itaque excepturi perferendis perspiciatis! Corrupti adipisci sed mollitia illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sint magni soluta nisi asperiores recusandae quae sunt quo, dolorum sequi. Voluptates corrupti laboriosam laborum molestiae ratione earum aliquid culpa. Itaque?</p>
 </body>
 </html>
