@@ -6,51 +6,63 @@
     <title>Tabelas</title>
     <style>
         body{
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;      /*tipo de letra do corpo da pagina*/
         }
         table{
-            width: 500px;
-            border-collapse: collapse;
+            width: 500px;       /*width - largura da tabela*/
+            border-collapse: collapse;      /*faz com que a tabela fique com as linhas juntas, "trocando para separate, elas se separam"*/
         }
 
         td, th{
-            border: 1px solid black;
-            padding: 10px;
+            border: 1px solid black;        /*borda que separa as linhas */
+            padding: 10px;      /*padding - espaço em cima, e em baixo das palavras*/
         }
 
-        thead, tfoot{
-            background-color: gray;
-            color: white;
+        thead, tfoot{       /*define a cor do cabeçalho "thead", e a cor do roodapé "tfoot*/
+            background-color: rgb(100, 98, 98);     /*cor de fundo*/
+            color: white;       /*cor da letra*/
         }
 
-        td.num{
-            text-align: right;
+        tbody > tr:nth-child(odd){  /*odd - significa coluna impar(pode ser trocado por 2n-1)*/
+            background-color: rgba(182, 178, 178, 0.815);   /*define a cor da linha impar*/
+        }
+
+        tbody > tr:nth-child(even){     /*even - signifiva coluna par(pode ser trocado por 2n) "o 2n e o tanto de linha que vai pular*/
+            background-color: rgba(255, 255, 255, 0.815);       /*define a cor da linha par*/
+        }
+
+        td.num{     /*"td" é o dado da tabela, EX: o nome da cidade, e o número de habitantes, (td.num, são apenas os números*/
+            text-align: right;      /*right - alinha os números a direita, se trocar para "left" eles ficam a esquerda, "center" ficam no centro*/
         }
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas grandes</h1>
+    <h1>Uso de tabelas grandes</h1>     <!--Titulo da tabela-->
     <!--
-        ANATOMIA ARA TABELAS GRANDES
-        TABLE
-            THEAD
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE - tabela
+            THEAD - cabeçalho
                 TR, TD, TH
-            TBODY
+
+            TBODY - corpo
                 TR, TD, TH
-            TFOOT
+
+            TFOOT - rodapé
                 TR, TD, TH
+
+                (tr - linha na tabela), dentro das linhas pode usar, (td - dados) ou (th - texto livre)
     -->
     <table>
         <thead>
             <tr>
                 <th scope="col">Estado</th>       <!--(scope="col") Dados ficam em baixo na coluna-->
-                <th scope="col" style="width: 50px;">População</th>      
+                <th scope="col" style="width: 100px">População</th>      <!--(style="width: 50px") é a largura da coluna dos números-->
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td class="num">45.919.049</td>
+                <td class="num">45.919.049</td>     <!--(td class="num") cria a classe  'num' para poder trocar o estilo dos números -->
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
