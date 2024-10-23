@@ -7,6 +7,13 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            
+        }
+
+        h1, caption{
+            color: black;
+            text-shadow: 1px 1px 15px black;
         }
 
         table{
@@ -26,10 +33,6 @@
             background-color: gray;
         }
 
-        col.cprofissao{
-            background-color: darkorange;
-        }
-
     </style>
 </head>
 <body>
@@ -38,7 +41,7 @@
         <colgrup>
             <col class="cnome">
             <col class="cgrupo" span="2">       <!--de onde essa parte estiver, vai alterar 2 colunas a partir dela-->
-            <col class="cprofissao">
+            <col style="background: radial-gradient(circle at 100%, aqua, black)" class="cprofissao">
         </colgrup>
         <caption>Cadastro</caption>
         <tr>
